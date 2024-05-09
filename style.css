@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+/* CONTAINER */
+#calculator{
+    width: 300px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(200,200,200,1), rgba(250,250,250,1));
+}
+
+/* LOGO CALCOLATRICE */
+.logo{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Michroma', sans-serif;
+    line-height: 3;
+}
+
+/* DISPLAY */
+.results{
+    background-color: black;
+    color: rgb(33,193,31);
+    padding-right: 20px;
+    text-align: right;
+    line-height: 2;
+    font-family: 'Seven segment', sans-serif;
+    font-size: 40px;
+}
+
+/* BOTTONI NUMERICI + = */
+.buttons{
+    display: flex;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.numbers{
+    flex-grow: 4;
+    flex-basis: 0;
+}
+
+/* OPERAZIONE */
+.operators{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* DIMENSIONE BOTTONI */
+button{
+    padding: 6px 10px;
+    font-size: 20px;
+    font-size: 'Microma';
+    border-radius: 10px;
+    border-left: 1px solid #888;
+    border-bottom: 1 px solid #888;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100%;
+}
+
+/* DISTANZA BOTTONI */
+.numbers button{
+    flex-basis: calc(100% / 3 - 10px);
+}
+
+.numbers button.large{
+    flex-basis: calc(100% / 3 * 2 - 10px);
+}
+
+/* BOTTONI = E C */
+.orange{
+    background-color: orange;
+}
